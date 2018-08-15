@@ -1,0 +1,118 @@
+.lang-rtl {
+  * {
+    direction: rtl !important;
+  }
+  main {
+    text-align: right !important;
+  }
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.25em;
+}
+
+.container {
+  width: auto;
+}
+
+.medium-gutters {
+  margin-right: -0.7rem;
+  margin-left: -0.7rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+  }
+}
+
+.small-gutters {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+.extra-small-gutters {
+  margin-right: -0.3rem;
+  margin-left: -0.3rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
+//used for small product listing
+.list-small-gutters {
+  margin-right: -0.4rem;
+  margin-left: -0.4rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+}
+
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+ #left-column{
+    order: 0;
+  }
+  #left-column, %right-column{
+    margin-top: 2rem;
+  }
+}
+
+/*** 5 column layout ***/
+.col-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15,
+.col-xl-15{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-15 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+@include media-breakpoint-only(sm) {
+  .col-sm-15 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@include media-breakpoint-only(md) {
+  .col-md-15 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@include media-breakpoint-only(lg) {
+  .col-lg-15 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@include media-breakpoint-only(xl) {
+  .col-xl-15 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+

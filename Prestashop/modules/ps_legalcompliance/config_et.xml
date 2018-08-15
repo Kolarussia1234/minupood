@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_legalcompliance</name>
+    <displayName><![CDATA[Vastavus &otilde;igusnormidele]]></displayName>
+    <version><![CDATA[3.0.0]]></version>
+    <description><![CDATA[See moodul aitab kaupmeestel asjakohaseid e-kaubanduse seadusi t&auml;ita.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[Oled kindel, et soovid eemaldada seda moodulit?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,52 @@
+//price
+.product-price{
+  @include st2(color, $lp_price);
+}
+
+//reviews
+.iqit-review-star{
+  @include st2(color, $lp_ratings);
+}
+
+//labels
+.product-flags {
+
+  .product-flag{
+    @include st2(font-size, rem($lp_label_font_size));
+    @include st2(letter-spacing, rem($lp_label_font_spacing));
+    @include st(font-style, $lp_label_font_style, '');
+    @include st(font-weight, $lp_label_font_weight, '');
+    @include st(text-transform, $lp_label_font_uppercase, '');
+  }
+
+  .discount, .on-sale{
+    @include st2(background, $lp_sale_l_bg);
+    @include st2(color, $lp_sale_l_txt);
+  }
+
+  .new {
+    @include st2(background, $lp_new_l_bg);
+    @include st2(color, $lp_new_l_txt);
+  }
+
+  .online-only, .pack{
+    @include st2(background, $lp_online_l_bg);
+    @include st2(color, $lp_online_l_txt);
+  }
+
+}
+
+.discount {
+  @include st2(background, $lp_sale_l_bg);
+  @include st2(color, $lp_sale_l_txt);
+}
+
+.product-available{
+  @include st2(background, $lp_intstock_l_bg);
+  @include st2(color, $lp_intstock_l_txt);
+}
+
+.product-unavailable{
+  @include st2(background, $lp_outstock_l_bg);
+  @include st2(color, $lp_outstock_l_txt);
+}

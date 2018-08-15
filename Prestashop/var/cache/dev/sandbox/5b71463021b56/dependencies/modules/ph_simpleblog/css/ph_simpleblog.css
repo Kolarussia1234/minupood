@@ -1,0 +1,188 @@
+.simpleblog-recent {
+  margin-top: 30px;
+}
+.ph_simpleblog {
+  width: 100%;
+  height: 100%;
+}
+.ph_simpleblog .simpleblog-category-image {
+  margin-bottom: 20px;
+}
+.ph_simpleblog .simpleblog-posts .simpleblog-post-item.first-in-line {
+  clear: left;
+}
+.ph_simpleblog .simpleblog-posts .post-item {
+  width: 100%;
+  position: relative;
+  margin-bottom: 3rem;
+  transition: background .3s ease, color .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.ph_simpleblog.elementor-blog-posts  .simpleblog-posts .post-item{
+  margin-bottom: 0rem;
+}
+
+.ph_simpleblog .simpleblog-posts .post-thumbnail{
+  margin-bottom: 0.8rem;
+}
+.ph_simpleblog .simpleblog-posts h2 {
+  font-size: 1rem;
+  background: none;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid hsla(0,0%,63%,.25);
+}
+.ph_simpleblog .simpleblog-posts h2 a {
+  text-decoration: none;
+}
+.ph_simpleblog .simpleblog-posts .post-content {
+  margin: 0.8rem 0;
+}
+.ph_simpleblog .simpleblog-posts .post-content p img {
+  display: block;
+}
+.ph_simpleblog .simpleblog-posts .post-content .post-read-more span {
+  text-decoration: underline;
+}
+.ph_simpleblog .simpleblog-posts .post-content .post-read-more i {
+  font-size: 0.6em;
+}
+.ph_simpleblog .simpleblog-posts .post-additional-info {
+  overflow: hidden;
+  padding-top: 0.6rem;
+  border-top: 1px solid hsla(0,0%,63%,.25);
+}
+.ph_simpleblog .simpleblog-posts .post-additional-info div {
+  display: block;
+}
+.ph_simpleblog .simpleblog-posts .post-additional-info a {
+  text-decoration: none;
+}
+.ph_simpleblog .simpleblog-posts .post-additional-info a:hover {
+  text-decoration: underline;
+}
+.ph_simpleblog .simpleblog-posts .post-additional-info span {
+  display: inline-block;
+  margin-right: 12px;
+}
+.ph_simpleblog .simpleblog-posts .post-additional-info span i {
+  margin-right: 2px;
+}
+.ph_simpleblog .simpleblog-posts .post-additional-info span:last-of-type {
+  margin-right: 0;
+}
+
+
+.ph_simpleblog .simpleblog-posts.related .post-additional-info span {
+  float: none;
+  border-left: 0;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.ph_simpleblog .post_cover {
+  display: block;
+  margin: 0 -15px;
+}
+
+.simpleblog-single .post-meta-info {
+margin-bottom: 1.5rem;
+}
+.simpleblog-single .post-meta-info span {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid hsla(0,0%,63%,.25)
+}
+.simpleblog-single .post-meta-info span span {
+  margin: 0;
+  padding: 0;
+}
+.simpleblog-single .post-meta-info span i {
+  margin-right: 3px;
+}
+.simpleblog-single .post-meta-info span:last-of-type {
+  border-right: 0;
+}
+.simpleblog-single .post-featured-image {
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.5s;
+}
+.simpleblog-single .post-featured-image:hover {
+  opacity: 0.8;
+}
+.simpleblog-single .post-block {
+  margin: 1rem 0;
+}
+.simpleblog-single .post-gallery a img {
+  transition: opacity 0.5s;
+  margin-bottom: 10px;
+}
+.simpleblog-single .post-gallery a:hover img {
+  opacity: 0.8;
+}
+.simpleblog-single .fb_iframe_widget,
+.simpleblog-single .fb_iframe_widget span,
+.simpleblog-single .fb_iframe_widget span iframe[style] {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+.simpleblog-category h1,
+.simpleblog-home h1 {
+  font: 600 18px/22px "Open Sans", Verdana, sans-serif;
+  color: #555454;
+  background: #f6f6f6;
+  border-top: 5px solid #333333;
+  text-transform: uppercase;
+  padding: 15px 5px 16px 20px;
+  margin-bottom: 20px;
+  margin-top: 9px;
+}
+/**
+
+	Comments
+
+**/
+#simpleblog-post-comments .post-comment {
+  padding: 1.5rem;
+  border-bottom: 1px solid hsla(0,0%,63%,.25);
+}
+#simpleblog-post-comments .post-comment .post-comment-author {
+  font-weight: bold;
+  font-style: italic;
+}
+#simpleblog-post-comments .post-comment .post-comment-content {
+  padding: 1rem 0 0 0.8rem;
+}
+#simpleblog-post-comments .post-comment:nth-child(2n) {
+  background: hsla(0,0%,80%,.15)
+}
+#simpleblog-post-comments form {
+  margin-top: 2rem;
+}
+
+/**
+
+	blog_for_prestashop_column
+
+**/
+
+#blog_for_prestashop_column .product-content {
+  padding:  0.8rem 0;
+}
+
+#blog_for_prestashop_column .product-content p{
+  margin: 0;
+  padding: 0;
+}
+
+#blog_for_prestashop_column .post-additional-info{
+    padding: 0.2rem 0 0.6rem 0;
+}
+#blog_for_prestashop_column .post-additional-info span{
+    margin-right: 0.3rem;
+}
+
+#blog_for_prestashop_column.column-posts-list li {
+  border-bottom: 1px solid hsla(0,0%,63%,.25);
+  margin-bottom: 0.8rem;
+}

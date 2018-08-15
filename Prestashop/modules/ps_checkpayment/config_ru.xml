@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_checkpayment</name>
+    <displayName><![CDATA[Оплата чеком]]></displayName>
+    <version><![CDATA[2.0.3]]></version>
+    <description><![CDATA[Этот модуль позволяет вам принимать платежи чеком.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Вы точно хотите удалить эту информацию?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

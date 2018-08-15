@@ -1,0 +1,13 @@
+1534158015
+s:1228:"HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 13 Aug 2018 10:54:30 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 918
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Strict-Transport-Security: max-age=0
+
+{"modules":[{"id":"32577","name":"ps_themecusto","displayName":"Theme Customization","categoryName":"Natif","description":"","author":"PrestaShop","url":"https:\/\/addons.prestashop.com\/product.php?id_product=32577?utm_source=back-office&utm_medium=push-addons&utm_campaign=back-office-RU&utm_content=download","serviceUrl":"","img":"https:\/\/medias1.prestastore.com\/img\/pico\/32577.jpg","fullDescription":"","additionalDescription":"","features":"","customer_benefits":"","demo_video":"","version":"1.0.7","last_update":"2018-08-13 05:08:52","compatibility":{"from":"1.7.0.0","to":"1.7.4.2"},"price":{"EUR":0,"USD":0,"GBP":0},"badges":[{"label":"Made by PrestaShop","img":"https:\/\/medias2.prestastore.com\/themes\/prestastore\/img\/front\/sprites\/badges\/made-by-prestashop.png"}],"cover":{"small":"https:\/\/api-addons.prestashop.com\/-pprod\/.jpg","big":"https:\/\/api-addons.prestashop.com\/-pbig\/.jpg"}}]}";

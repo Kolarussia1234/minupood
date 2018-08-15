@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.prestashop.com/en/blog/feed.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Blog Feed</title>
+    <link>https://www.prestashop.com/en/blog/feed.xml</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>PrestaShop is one of the first to join new Stripe partner program</title>
+    <link>https://www.prestashop.com/en/blog/stripe-partnership</link>
+    <description>Most people today don’t know that only three percent of GDP is online.</description>
+     <pubDate>Wed, 01 Aug 2018 10:21:03 +0200</pubDate>
+ <dc:creator>MLNielsen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/stripe-partnership</guid>
+  </item>
+  <item>
+    <title>Global shopping trends and tourism offer new sales opportunities to merchants</title>
+    <link>https://www.prestashop.com/en/blog/global-shopping-trends-and-tourism-offer-new-sales-opportunities-to-merchants</link>
+    <description>The global market is opening up more and more for merchants in Europe, bringing with it enormous opportunities, provided that merchants are keeping up with current deve</description>
+     <pubDate>Tue, 31 Jul 2018 10:06:37 +0200</pubDate>
+ <dc:creator>wirecard_en</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/global-shopping-trends-and-tourism-offer-new-sales-opportunities-to-merchants</guid>
+  </item>
+  <item>
+    <title>How to contribute to the Prestashop Project ?</title>
+    <link>https://www.prestashop.com/en/blog/how-to-contribute-to-prestashop-project</link>
+    <description>As the title of this article indicates, we have prepared a guide that contains all the information you need to contribute to the PrestaShop Project.</description>
+     <pubDate>Mon, 23 Jul 2018 10:21:51 +0200</pubDate>
+ <dc:creator>camille.teissier</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/how-to-contribute-to-prestashop-project</guid>
+  </item>
+  <item>
+    <title>Meet Cyril and Edouard, Ambassadors of the month | July 2018</title>
+    <link>https://www.prestashop.com/en/blog/ambassadors-cyril-edouard-paris</link>
+    <description>About you
+Three words to best describe you:
+Edouard: “dithyrambique”. @dithyrambique it’s my name on Instagram @dithyrambique and it’s a real state of mind.</description>
+     <pubDate>Fri, 20 Jul 2018 00:00:00 +0200</pubDate>
+ <dc:creator>MLNielsen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ambassadors-cyril-edouard-paris</guid>
+  </item>
+  <item>
+    <title>Join us at Dmexco 2018</title>
+    <link>https://www.prestashop.com/en/blog/come-with-us-at-dmexco-2018</link>
+    <description> </description>
+     <pubDate>Mon, 16 Jul 2018 11:14:46 +0200</pubDate>
+ <dc:creator>Antoine Durantet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/come-with-us-at-dmexco-2018</guid>
+  </item>
+  <item>
+    <title>eBay “Product Based Listings” Started May 2018 - Does Your Product Listing Software Fit The Bill?</title>
+    <link>https://www.prestashop.com/en/blog/ebay-product-based-listings</link>
+    <description>What is The New eBay Product-Based Shopping Experience?</description>
+     <pubDate>Wed, 11 Jul 2018 17:11:20 +0200</pubDate>
+ <dc:creator>magnalister</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ebay-product-based-listings</guid>
+  </item>
+  <item>
+    <title>Ready for the next step? Take your business overseas</title>
+    <link>https://www.prestashop.com/en/blog/ready-for-the-next-step-take-your-business-overseas</link>
+    <description>In Europe, cross-border ecommerce is growing by 30% a year, and by 2020 it will amount to 130 billion euros(1). For customers, shopping on overseas sites allows them to</description>
+     <pubDate>Wed, 04 Jul 2018 10:24:11 +0200</pubDate>
+ <dc:creator>paypal</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ready-for-the-next-step-take-your-business-overseas</guid>
+  </item>
+  <item>
+    <title>Meet Roberto, Ambassador of the month | June 2018</title>
+    <link>https://www.prestashop.com/en/blog/ambassador-roberto-catania</link>
+    <description>About you
+Three words to best describe you:
+Quiet, ambitious, determined.</description>
+     <pubDate>Mon, 02 Jul 2018 00:00:00 +0200</pubDate>
+ <dc:creator>MLNielsen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ambassador-roberto-catania</guid>
+  </item>
+  <item>
+    <title>Get your store ready for future sales operations with the 2018 e-Commerce Calendar.</title>
+    <link>https://www.prestashop.com/en/blog/ecommerce-calendar-2018</link>
+    <description>The start of summer is a crucial period for e-sellers.  We have put together some tips to help you improve your communications around the future sales events that will liven up your online store.</description>
+     <pubDate>Fri, 29 Jun 2018 15:11:43 +0200</pubDate>
+ <dc:creator>camille.teissier</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-calendar-2018</guid>
+  </item>
+  <item>
+    <title>Rising charges for Google Maps from 16 July 2018</title>
+    <link>https://www.prestashop.com/en/blog/charges-for-google-maps</link>
+    <description>This news has gone largely unnoticed in the world of the web and e-commerce.</description>
+     <pubDate>Mon, 18 Jun 2018 15:12:34 +0200</pubDate>
+ <dc:creator>camille.teissier</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/charges-for-google-maps</guid>
+  </item>
+  </channel>
+</rss>

@@ -1,0 +1,13 @@
+1534153760
+s:2084:"HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 13 Aug 2018 09:43:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1773
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Strict-Transport-Security: max-age=0
+
+{"modules":[{"id":"24360","name":"ps_linklist","displayName":"Link List","categoryName":"Natif","description":"Display links to your static pages (CMS and more) in left or right blocks in your shop&#39;s columns.  You can configure this module with the &quot;Link Widget&quot; page from the Design section","author":"PrestaShop","url":"https:\/\/addons.prestashop.com\/product.php?id_product=24360?utm_source=back-office&utm_medium=push-addons&utm_campaign=back-office-RU&utm_content=download","serviceUrl":"","img":"https:\/\/medias1.prestastore.com\/img\/pico\/24360.jpg","fullDescription":"Display links to your static pages (CMS and more) in left or right blocks in your shop&#39;s columns.<br \/>\r\n<br \/>\r\nYou can configure this module with the &quot;Link Widget&quot; page from the Design section.","additionalDescription":"\u200bGive more visibility to your pages, where you want and when you want.","features":"The link widget tools gives you great flexibility to add links: using hooks, you can add links in many places.","customer_benefits":"","demo_video":"","version":"2.1.5","last_update":"2018-08-13 05:08:49","compatibility":{"from":"1.7.1.0","to":"1.7.4.2"},"price":{"EUR":0,"USD":0,"GBP":0},"badges":[{"label":"Made by PrestaShop","img":"https:\/\/medias2.prestastore.com\/themes\/prestastore\/img\/front\/sprites\/badges\/made-by-prestashop.png"}],"cover":{"small":"https:\/\/api-addons.prestashop.com\/838738-pprod\/.jpg","big":"https:\/\/api-addons.prestashop.com\/838738-pbig\/.jpg"},"pictures":{"small":["https:\/\/api-addons.prestashop.com\/838736-pprod\/.jpg","https:\/\/api-addons.prestashop.com\/838739-pprod\/.jpg"],"big":["https:\/\/api-addons.prestashop.com\/838736-pbig\/.jpg","https:\/\/api-addons.prestashop.com\/838739-pbig\/.jpg"]}}]}";
