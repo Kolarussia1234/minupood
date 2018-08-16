@@ -1,0 +1,1 @@
+alert("Kas see asi hakkab yldse kunagi toole w?!?!");

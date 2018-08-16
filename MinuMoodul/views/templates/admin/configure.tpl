@@ -36,7 +36,7 @@
 	</p>
 </div>
 
-<div class="panel">
+<!-- <div class="panel">
 	<h3><i class="icon icon-tags"></i> {l s='Documentation' mod='MinuMoodul'}</h3>
 	<p>
 		&raquo; {l s='You can get a PDF documentation to configure this module' mod='MinuMoodul'} :
@@ -45,4 +45,4 @@
 			<li><a href="#" target="_blank">{l s='French' mod='MinuMoodul'}</a></li>
 		</ul>
 	</p>
-</div>
+</div> -->

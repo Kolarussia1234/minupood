@@ -39,6 +39,7 @@ class MinuMoodul extends Module
         $this->version = '1.0.0';
         $this->author = 'Nick Ovt';
         $this->need_instance = 0;
+        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
 
         /**
          * Set $this->bootstrap to true if your module is compliant with bootstrap (PrestaShop 1.6)
@@ -52,6 +53,9 @@ class MinuMoodul extends Module
 
         $this->confirmUninstall = $this->l('Are you sure you want to uninstall my module?');
 
+        if (!Configuration::get('MYMODULE_NAME'))
+      $this->warning = $this->l('No name provided');
+
         $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
     }
 
@@ -63,7 +67,15 @@ class MinuMoodul extends Module
     {
         Configuration::updateValue('MINUMOODUL_LIVE_MODE', true);
 
+    	if (Shop::isFeatureActive())
+{
+  Shop::setContext(Shop::CONTEXT_ALL);
+}
+
         return parent::install() &&
+        	$this->registerHook('displayProductListReviews')&&
+        	$this->registerHook('leftColumn')&&
+        	$this->registerHook('rightColumn')&&
             $this->registerHook('header') &&
             $this->registerHook('backOfficeHeader') &&
             $this->registerHook('actionObjectImageAddAfter') &&
@@ -82,10 +94,43 @@ class MinuMoodul extends Module
      */
     public function getContent()
     {
+
+    	//$output = null;
+ 
+   // if (Tools::isSubmit('submit'.$this->name))
+    //{
+     //   $my_module_name = strval(Tools::getValue('MYMODULE_NAME'));
+      //  if (!$my_module_name
+       //   || empty($my_module_name)
+        //  || !Validate::isGenericName($my_module_name))
+         //   $output .= $this->displayError($this->l('Invalid Configuration value'));
+        //else
+        //{
+         //   Configuration::updateValue('MYMODULE_NAME', $my_module_name);
+         //   $output .= $this->displayConfirmation($this->l('Settings updated'));
+       // }
+    //}
+    //return $output.$this->displayForm();
+    //return $this->postProcess();
+//}
+
         /**
          * If values have been submitted in the form, process.
          */
+        $output1 = null;
+
         if (((bool)Tools::isSubmit('submitMinuMoodulModule')) == true) {
+        	$my_module_name = strval(Tools::getValue('MYMODULE_NAME'));
+        if (!$my_module_name
+          || empty($my_module_name)
+          || !Validate::isGenericName($my_module_name))
+            $output1 .= $this->displayError($this->l('Invalid Configuration value'));
+        else
+        {
+            Configuration::updateValue('MYMODULE_NAME', $my_module_name);
+            $output1 .= $this->displayConfirmation($this->l('Settings updated'));
+        }
+
             $this->postProcess();
         }
 
@@ -93,13 +138,13 @@ class MinuMoodul extends Module
 
         $output = $this->context->smarty->fetch($this->local_path.'views/templates/admin/configure.tpl');
 
-        return $output.$this->renderForm();
+        return $output.$output1.$this->renderForm();
     }
 
 
 
 
-public function displayForm()
+/*public function displayForm()
 {
     // Get default language
     $default_lang = (int)Configuration::get('PS_LANG_DEFAULT');
@@ -116,7 +161,14 @@ public function displayForm()
                 'name' => 'MYMODULE_NAME',
                 'size' => 20,
                 'required' => true
-            )
+            ),
+        	array(
+        		'type' => 'text',
+        		'label' => $this->l('Enter text'),
+        		'name' => 'MYMODULE_NAME',
+        		'size' => 20,
+        		'required' => true
+        	)
         ),
         'submit' => array(
             'title' => $this->l('Save'),
@@ -157,14 +209,15 @@ public function displayForm()
     // Load current value
     $helper->fields_value['MYMODULE_NAME'] = Configuration::get('MYMODULE_NAME');
  
-    return $helper->generateForm($fields_form);
-}
+   // return $helper->generateForm($fields_form);
+    return $helper->generateForm(array($this->getConfigForm()));
+} */
 
 
     /**
      * Create the form that will be displayed in the configuration of your module.
      */
-    protected function renderForm()
+   protected function renderForm()
     {
         $helper = new HelperForm();
 
@@ -172,7 +225,7 @@ public function displayForm()
         $helper->table = $this->table;
         $helper->module = $this;
         $helper->default_form_language = $this->context->language->id;
-        $helper->allow_employee_form_lang = Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG', 0);
+        $helper->allow_employee_form_lang = Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG', 1);
 
         $helper->identifier = $this->identifier;
         $helper->submit_action = 'submitMinuMoodulModule';
@@ -201,6 +254,11 @@ public function displayForm()
                 'icon' => 'icon-cogs',
                 ),
                 'input' => array(
+                	array(
+                		'type' => 'text',
+                		'label' => $this->l('Name your module'),
+                		'name' => 'MYMODULE_NAME'
+                	),
                     array(
                         'type' => 'switch',
                         'label' => $this->l('Live mode'),
@@ -233,6 +291,13 @@ public function displayForm()
                         'name' => 'MINUMOODUL_ACCOUNT_PASSWORD',
                         'label' => $this->l('Password'),
                     ),
+                    array(
+                    	'col' => 3,
+                    	'type' => 'text',
+                    	'desc' => $this->l('Enter text displayed on the Product Description'),
+                    	'name' => 'MINUMOODUL_PRODUCT_TEXT',
+                    	'label' => $this->l('Product description'),
+                    ),
                 ),
                 'submit' => array(
                     'title' => $this->l('Save'),
@@ -247,9 +312,11 @@ public function displayForm()
     protected function getConfigFormValues()
     {
         return array(
+        	'MYMODULE_NAME' => Configuration::get('MYMODULE_NAME'),
             'MINUMOODUL_LIVE_MODE' => Configuration::get('MINUMOODUL_LIVE_MODE', true),
             'MINUMOODUL_ACCOUNT_EMAIL' => Configuration::get('MINUMOODUL_ACCOUNT_EMAIL', 'contact@prestashop.com'),
-            'MINUMOODUL_ACCOUNT_PASSWORD' => Configuration::get('MINUMOODUL_ACCOUNT_PASSWORD', null),
+            'MINUMOODUL_ACCOUNT_PASSWORD' => Configuration::get('MINUMOODUL_ACCOUNT_PASSWORD', '123'),
+            'MINUMOODUL_PRODUCT_TEXT' => Configuration::get('MINUMOODUL_PRODUCT_TEXT')
         );
     }
 
@@ -263,6 +330,7 @@ public function displayForm()
         foreach (array_keys($form_values) as $key) {
             Configuration::updateValue($key, Tools::getValue($key));
         }
+
     }
 
     /**
@@ -285,13 +353,55 @@ public function displayForm()
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
     }
 
+    public function hookDisplayLeftColumn($params)
+{
+  $this->context->smarty->assign(
+      array(
+          'my_module_name' => Configuration::get('MYMODULE_NAME'),
+          'my_module_link' => $this->context->link->getModuleLink($this->name, 'display'),
+          'my_module_message' => $this->l('This is a simple text message') // Do not forget to enclose your strings in the l() translation method
+      )
+  );
+  return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
+} 
+ 
+public function hookDisplayRightColumn($params)
+{
+
+	//$this->context->smarty->assign(
+     // array(
+      //    'my_module_name' => Configuration::get('MYMODULE_NAME'),
+       //   'my_module_link' => $this->context->link->getModuleLink('MinuMoodul', 'display')
+      //)
+  //);
+  //return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
+
+  return $this->hookDisplayLeftColumn($params);
+}
+ 
+public function hookDisplayHeader()
+{
+	//$this->context->controller->addJS($this->_path.'/views/js/alert.js');
+    $this->context->controller->addCSS($this->_path.'views/css/mymodule.css', 'all');
+}
+
+
     public function hookActionObjectImageAddAfter()
     {
+    	$this->context->controller->addJS($this->_path.'/views/js/alert.js');
         /* Place your code here. */
     }
 
     public function hookActionOrderDetail()
     {
         /* Place your code here. */
+        $this->context->controller->addJS($this->_path.'/views/js/alert.js');
+        $this->context->controller->addCSS($this->_path.'views/css/mymodule.css', 'all');
+    }
+
+
+    public function displayProductListReviews(){
+    	//$this->context->controller->addCSS($this->_path.'views/css/mymodule.css', 'all');
+    	$this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
     }
 }

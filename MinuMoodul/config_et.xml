@@ -2,11 +2,11 @@
 <module>
     <name>MinuMoodul</name>
     <displayName><![CDATA[TextModuleNick]]></displayName>
-    <version><![CDATA[1.0.0]]></version>
+    <version><![CDATA[1.3.6]]></version>
     <description><![CDATA[Here is my new great module for Prestashop! See on minu moodul. VP_]]></description>
     <author><![CDATA[Nick Ovt]]></author>
     <tab><![CDATA[checkout]]></tab>
-	<confirmUninstall><![CDATA[Kas olete kindel et tahate deinstallida sedamoodulit?]]></confirmUninstall>
+	<confirmUninstall><![CDATA[Kas olete kindel et tahate deinstallida seda moodulit?]]></confirmUninstall>
     <is_configurable>1</is_configurable>
     <need_instance>0</need_instance>
 	<limited_countries></limited_countries>
