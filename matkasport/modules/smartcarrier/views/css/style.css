@@ -1,0 +1,11 @@
+div#opc_delivery_methods > div.opc-overlay,
+div#opc_payment_methods > div.opc-overlay {
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+}
+a.disabled {
+	opacity: 0.3;
+	pointer-events: none;
+}

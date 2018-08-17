@@ -1,0 +1,17 @@
+.iqitvideos-block{
+  > .iqitvideo{  max-width: 100%;}
+  > .iqitvideo > .iframe{width: 100%; border: none;}
+}
+
+#iqit-threesixty{
+  text-align: center;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.video-thumb-container{
+  width: 100px;
+  > .iframe{width: 100%; border: none;}
+}

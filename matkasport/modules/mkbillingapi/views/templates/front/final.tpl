@@ -1,0 +1,1 @@
+<p class="alert alert-{$msg_class}">{$banklink_msg}</p>

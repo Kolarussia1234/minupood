@@ -1,0 +1,305 @@
+.payment_module{
+    position: relative !important;
+    margin-bottom: 15px;
+}
+.cardimg{
+    margin-right: 5px;
+    width: 40px; 
+    height:25px;
+}
+
+.everypayManagecards {
+    padding:8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position:relative;
+    display: inline-block;
+    letter-spacing: 1px !important;
+    background-color: #e6e6e6;
+    text-align: center !important;
+    border-radius: 0px !important;
+    border: none !important;
+    color:#000000;
+    cursor:pointer;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.everypayManagecards.hidden{
+    display: none;
+}
+
+.everypayManagecards:hover{
+    background-color:#bfbfbf !important;
+}
+
+.everypay.myCards .cardlist td:last-child{
+ 	border-right:0px;
+}
+
+ .everypay.myCards .cardlist .delete:hover{
+ 	background-color:#232323;
+}
+.everypay.myCards .cardlist .delete{
+ 	padding:8px;
+ 	background-color:#454545;
+ 	border: 3px solid #ababab;
+ 	margin:5px;
+ 	color:#ffffff;
+}
+.everypay.myCards .cardlist .defaultButton:hover{
+ 	background-color:#232323;
+}
+.everypay.myCards .cardlist .defaultButton{
+    padding:8px;
+    background-color:#454545;
+    border: 3px solid #ababab;
+    margin:5px;
+    color:#ffffff;
+}
+.everypay.myCards .cardlist th{
+ 	border-top:0px;
+    border-right:2px solid black;
+    text-indent: 5px;
+}
+
+.everypay.myCards .cardlist td.action a{
+ 	margin-left:auto;
+ 	margin-right:auto;
+}
+.everypay.myCards .cardlist td{
+ 	height:40px;
+ 	line-height:40px;
+ 	border-top:2px solid black;
+    border-right:2px solid black;
+    padding: 10px;
+}
+
+.everypay.myCards .cardlist{
+ 	border:2px solid black;
+}
+
+.everypay.myCards{
+ 	width:100%;
+}
+
+.everypay.myCards .cardlist{
+    margin: 20px 0;
+	width:100%;
+}
+
+.payment_module.everypay label{
+    cursor:pointer;
+    position:relative;
+}
+
+.payment_module.everypay div.checker{
+    clear:none;
+}
+
+.payment_module.everypay .button{
+    position:relative;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    padding:8px;
+    background-color:#343434;
+    color:#ffffff;
+    border:0px;
+    width: 150px;
+    cursor: pointer;
+    color:#ffffff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.payment_module.everypay .button:hover{
+    background-color:#545454;
+}
+
+.everypayRedirect:hover {
+    background:linear-gradient(to bottom,#a7da92 0,#90cf75 10%,#51b528 90%,#51b426 100%);
+    color: #fff !important;
+}
+
+.payment_module.everypay .everypayChoices{
+    display: block;
+    width:100%;
+    padding-left: 70px;
+}
+
+.everypayOption .icon-trash{
+    display: inline-block;
+    font-family: "Material Icons";
+    font-weight: 400;
+    font-style: normal;
+}
+.everypayOption .makeDefault:hover{
+    text-decoration: underline;
+}
+
+.everypayOption .makeDefault{
+    display:inline;
+    padding:0;
+    margin-left:5px;
+    border:0px;
+    font-size:12px;
+    text-decoration: none;
+    letter-spacing:0px;
+    font-weight:normal;
+}
+
+.everypayOption.default .makeDefault{
+    display:none;
+}
+
+#everypayChoice {
+    display: block;
+}
+
+#payment-form #everypayChoice .everypayOption label, 
+#payment-form #everypayChoice .use_new_mar label{
+    font-size: 0.8em;
+    display:inline-block;
+    margin-left: 5px;
+}
+
+#iframe_payment #everypayChoice .everypayOption label, 
+#iframe_payment #everypayChoice .use_new_mar label{
+    font-size: 0.9em;
+    display:inline-block;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+#iframe_payment #everypayChoice .use_new_mar label{
+    margin-top: 5px;
+}
+
+#iframe_payment {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.use_new_mt {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#everypayChoice .everypayOption a{
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.everypayNotification {
+    cursor: default;
+    color: #7a7a7a;
+    display: block;
+    height: 90px;
+}
+
+#everypayRetryButton.button {
+    display: block;
+    float: none;
+    margin: 0 auto 10px auto;
+}
+
+.everypayButton:hover{
+    background-color:#545454;
+    color:#ffffff;
+}
+
+.everypayButton{
+    padding:10px;
+    background-color:#343434;
+    color:#ffffff;
+    border:0px;
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.everypay_card_logo{
+    height: 79px;
+    width: 62px;
+    float: left;
+    background-image: url('../img/everypay_payment.png');
+    background-repeat: no-repeat;
+}
+
+.payment_module.everypay .clearfix{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.pay-login-links{
+    color: #2fb5d2;
+    text-decoration: none!important;
+    z-index: 5;
+}
+
+.pay-login-links:hover{
+    color: #1a8196;;
+}
+
+.lnk_everypay{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.account-list #lnk_everypay {
+    display: none;
+}
+
+#everypayIframe{
+    height:0px;
+    width: 0px;
+    display:none;
+    display: block;
+    border: none;
+    margin: 0 auto;
+}
+
+#iframe_payment.js-payment-everypay.disabled {
+    display: none !important;
+}
+
+.radio_checkbox {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/*iframe pay button change*/
+#btnpay {
+    display: none;
+}
+
+.overlay{
+    background-image: url('../img/loader.gif');
+    background-size: 10%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .5s ease
+}
+
+input#btnpay:checked + .overlay{
+    opacity: 1;
+    z-index: 5;
+}

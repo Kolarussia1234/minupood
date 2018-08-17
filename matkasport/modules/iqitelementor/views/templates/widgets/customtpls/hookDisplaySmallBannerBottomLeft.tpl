@@ -1,0 +1,1 @@
+{widget name="ps_imageslider_home" hook='displaySmallBannerBottomLeft'}

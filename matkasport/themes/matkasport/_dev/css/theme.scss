@@ -1,0 +1,157 @@
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "partials/_variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css";
+@import "partials/_animations";
+@import "partials/_mixins";
+@import "partials/_fonts";
+@import "partials/_commons";
+@import "partials/_slick";
+@import "components/alert";
+@import "components/brands";
+@import "components/drop-down";
+@import "components/modals";
+@import "components/iqitmegamenu";
+@import "components/notification";
+@import "components/search-widget";
+@import "components/checkout";
+@import "components/customer";
+@import "components/forgotten-password";
+@import "components/renew-password";
+@import "components/featuredproducts";
+@import "components/categories";
+@import "components/products";
+@import "components/preloaders";
+@import "components/cart";
+@import "components/block-cart";
+@import "components/block-reassurance";
+@import "components/quickview";
+@import "components/stores";
+@import "components/headers";
+@import "components/footers";
+@import "components/contact";
+@import "components/errors";
+@import "components/customization-modal";
+@import "components/sitemap";
+@import "components/supercheckout";
+
+.popover {
+  font-family: inherit;
+}
+
+/*** WRAPPER ***/
+#wrapper {
+  .banner {
+
+  }
+  .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    &[data-depth="1"] {
+      display: none;
+    }
+    ol {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    li {
+      display: inline;
+      &::after {
+        content: "/";
+        opacity: 0.4;
+        margin: .3em;
+      }
+      &:last-child {
+        &::after {
+          content: "";
+        }
+      }
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    #iqitproductsnav{
+      font-size: 1.5rem;
+    }
+  }
+}
+/*** MAIN ***/
+#main {
+  .page-content {
+    margin-bottom: rem(25px);
+    h6 {
+      margin-bottom: rem(18p);
+    }
+  }
+}
+
+
+#notifications {
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.block-section{
+  margin-bottom: 3rem;
+}
+
+.section-title{
+  position: relative;
+}
+
+/*** THEME COMPONTENTS ***/
+#back-to-top{
+  border: none;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  transition: $default-transition;
+  font-size: 2rem;
+  outline: none;
+  &.-back-to-top-visible{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+#page-preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+  #checkout-cart-summary {
+    float: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #header {
+  }
+  section.checkout-step {
+    width: 100%;
+  }
+  .default-input {
+    min-width: 100%;
+  }
+  label {
+    clear: both;
+  }
+}
+@include media-breakpoint-down(md) {
+  .container {
+    max-width: 100%;
+  }
+}

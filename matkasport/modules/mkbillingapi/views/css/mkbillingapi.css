@@ -1,0 +1,43 @@
+.veebipoed-payment-methods-list > li > .payment-method > img {
+    float: left;
+}
+.veebipoed-payment-methods-list > li > .payment-method:hover > img {
+    background-color: #eee;
+}
+.veebipoed-payment-methods-list > li > .payment-method > span{
+    float: left;
+    clear: both;
+}
+.veebipoed-payment-methods-list > li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.veebipoed-payment-methods-list {
+    margin-top: 10px;
+}
+.ajax_loader {
+    background: transparent url('../img/ajax-loader.gif') no-repeat center center;
+    background: rgba(230,230,230,0.3) url('../img/ajax-loader.gif') no-repeat center center !important;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.mkbillingapi_payment img{
+    width: 100px;
+    margin-right: 14px;
+}
+p.payment_module.mkbillingapi_payment a{
+    background: #fbfbfb;
+}
+p.payment_module.mkbillingapi_payment a:hover{
+    background-color: #f6f6f6;
+}
+#supercheckout-fieldset .supercheckout-threecolumns .mkbillingapi_payment{
+    padding-left: 5px;
+    margin-bottom: 10px !important;
+}

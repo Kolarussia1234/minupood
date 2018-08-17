@@ -1,0 +1,44 @@
+array(21) {
+  ["nonce"]=>
+  string(32) "f449bea923a79ba493e2fbc678fbb30a"
+  ["timestamp"]=>
+  string(10) "1452847935"
+  ["api_username"]=>
+  string(16) "f7b7fa8454267ef4"
+  ["transaction_result"]=>
+  string(9) "completed"
+  ["account_id"]=>
+  string(4) "EUR1"
+  ["payment_reference"]=>
+  string(64) "81cb4c819cb8a58a2693de74319a3b4a0926cb721d852b0c8b9389062eb8eea5"
+  ["payment_state"]=>
+  string(7) "settled"
+  ["amount"]=>
+  string(5) "19.68"
+  ["order_reference"]=>
+  string(3) "388"
+  ["cc_month"]=>
+  string(1) "1"
+  ["cc_year"]=>
+  string(4) "2017"
+  ["cc_holder_name"]=>
+  string(9) "Tom Smith"
+  ["cc_type"]=>
+  string(11) "master_card"
+  ["cc_last_four_digits"]=>
+  string(4) "2335"
+  ["processing_warnings"]=>
+  string(277) "{"city_match":["Billing Address city (tallinn) does not match the IP address city (Tallinn)!"],"state_match":["Billing address state () does not match the IP address state (01)!"],"postcode_match":["Billing address postcode (13519) does not match the IP address postcode ()!"]}"
+  ["cc_issuer_country"]=>
+  string(2) "EE"
+  ["stan"]=>
+  string(4) "5835"
+  ["state_3ds"]=>
+  string(5) "no3ds"
+  ["fraud_score"]=>
+  string(1) "0"
+  ["hmac_fields"]=>
+  string(250) "account_id,amount,api_username,cc_holder_name,cc_issuer_country,cc_last_four_digits,cc_month,cc_type,cc_year,fraud_score,hmac_fields,nonce,order_reference,payment_reference,payment_state,processing_warnings,stan,state_3ds,timestamp,transaction_result"
+  ["hmac"]=>
+  string(40) "902bd94dbc143d662f5e7e8019d4799ec07f13fe"
+}

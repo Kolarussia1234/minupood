@@ -1,0 +1,90 @@
+                        $this->context->smarty->assign('id_velsof_supercheckout_custom_fields', $id_velsof_supercheckout_custom_fields);
+                        $this->context->smarty->assign('custom_field_basic_details', $result_custom_fields_details_basic[0]);
+                        $this->context->smarty->assign('custom_field_lang_details', $array_fields_lang);
+                        $this->context->smarty->assign('custom_field_option_details', $array_fields_options);
+                        $this->context->smarty->assign('language_current', $this->context->language->id);
+                        $this->context->smarty->assign('languages', Language::getLanguages());
+                        $this->context->smarty->assign('show_option_field', $show_option_field);
+                        $this->context->smarty->assign('module_dir_url', _MODULE_DIR_);
+                        $json['response'] = $this->context->smarty->fetch(_PS_MODULE_DIR_ . 'supercheckout/views/templates/admin/edit_form_custom_fields.tpl');
+                        $this->context->smarty->assign('policy_id', $policy_id);
+                        $this->context->smarty->assign('gdpr_policy_basic_details', $result_custom_fields_details_basic[0]);
+                        $this->context->smarty->assign('gdpr_policy_lang_details', $array_fields_lang);
+                        $this->context->smarty->assign('language_current', $this->context->language->id);
+                        $this->context->smarty->assign('languages', Language::getLanguages());
+                        $this->context->smarty->assign('module_dir_url', _MODULE_DIR_);
+                        $json['response'] = $this->context->smarty->fetch(_PS_MODULE_DIR_ . 'supercheckout/views/templates/admin/edit_form_gdpr_policy.tpl');
+                        $this->context->smarty->assign('customer_controller', $this->context->link->getAdminLink('AdminCustomers'));
+                        $this->context->smarty->assign('order_controller', $this->context->link->getAdminLink('AdminOrders'));
+                        $this->context->smarty->assign('orders_consent', $orders_consent);
+                        $json['response'] = $this->context->smarty->fetch(_PS_MODULE_DIR_ . 'supercheckout/views/templates/admin/gdpr_filter_customer_data.tpl');
+                $this->context->language->id,
+                $this->context->language->id,
+            'module_url' => $this->context->link->getModuleLink(
+        $current_language_id = $this->context->language->id;
+        $this->context->smarty->assign('module_dir_url', _MODULE_DIR_);
+        $this->context->smarty->assign('gdpr_tpl_dir', _PS_MODULE_DIR_ .'supercheckout/views/templates/admin/admin_gdpr_policy.tpl');
+        $this->context->controller->addCSS($this->_path . 'views/css/supercheckout.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/bootstrap.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/responsive.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/jquery-ui/jquery-ui.min.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/fonts/glyphicons/glyphicons_regular.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/fonts/font-awesome/font-awesome.min.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/pixelmatrix-uniform/uniform.default.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/bootstrap-switch/bootstrap-switch.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/select2/select2.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/style-light.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/bootstrap-select/bootstrap-select.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/jQRangeSlider/iThing.css');
+        $this->context->controller->addCSS($this->_path . 'views/css/jquery-miniColors/jquery.miniColors.css');
+        $this->context->controller->addJs($this->_path . 'views/js/jquery-ui/jquery-ui.min.js');
+        $this->context->controller->addJs($this->_path . 'views/js/bootstrap.min.js');
+        $this->context->controller->addJs($this->_path . 'views/js/common.js');
+        $this->context->controller->addJs($this->_path . 'views/js/system/less.min.js');
+        $this->context->controller->addJs($this->_path . 'views/js/tinysort/jquery.tinysort.min.js');
+        $this->context->controller->addJs($this->_path . 'views/js/jquery/jquery.autosize.min.js');
+        $this->context->controller->addJs($this->_path . 'views/js/uniform/jquery.uniform.min.js');
+        $this->context->controller->addJs($this->_path . 'views/js/tooltip/tooltip.js');
+        $this->context->controller->addJs($this->_path . 'views/js/bootbox.js');
+        $this->context->controller->addJs($this->_path . 'views/js/bootstrap-select/bootstrap-select.js');
+        $this->context->controller->addJs($this->_path . 'views/js/bootstrap-switch/bootstrap-switch.js');
+        $this->context->controller->addJs($this->_path . 'views/js/system/jquery.cookie.js');
+        $this->context->controller->addJs($this->_path . 'views/js/themer.js');
+        $this->context->controller->addJs($this->_path . 'views/js/admin/jscolor.js');
+        $this->context->controller->addJs($this->_path . 'views/js/admin/clipboard.min.js');
+        $this->context->controller->addJs($this->_path . 'views/js/jquery-miniColors/jquery.miniColors.js');
+        $this->context->controller->addJs($this->_path . 'views/js/supercheckout.js?v=1');
+            $this->context->controller->addCSS($this->_path . 'views/css/supercheckout_16_admin.css');
+            $this->context->controller->addCSS($this->_path . 'views/css/supercheckout_15_admin.css');
+                $page_name = $this->context->smarty->tpl_vars['page']->value['page_name'];
+                            $this->context->link->getModuleLink(
+        if (isset($this->context->cookie->supercheckout_temp_address_delivery)
+            && $this->context->cookie->supercheckout_temp_address_delivery
+            $temp_address_delivery = $this->context->cookie->supercheckout_temp_address_delivery;
+            $perm_address_delivery = $this->context->cookie->supercheckout_perm_address_delivery;
+					where id_address = ' . (int) $this->context->cookie->supercheckout_temp_address_delivery);
+            $this->context->cookie->supercheckout_temp_address_delivery = 0;
+            $this->context->cookie->__unset($this->context->cookie->supercheckout_temp_address_delivery);
+        if (isset($this->context->cookie->supercheckout_temp_address_invoice)
+            && $this->context->cookie->supercheckout_temp_address_invoice
+            $temp_address_invoice = $this->context->cookie->supercheckout_temp_address_invoice;
+            $perm_address_invoice = $this->context->cookie->supercheckout_perm_address_invoice;
+					where id_address = ' . (int) $this->context->cookie->supercheckout_temp_address_invoice);
+            $this->context->cookie->supercheckout_temp_address_invoice = 0;
+            $this->context->cookie->__unset($this->context->cookie->supercheckout_temp_address_invoice);
+        $this->context->cookie->supercheckout_perm_address_delivery = 0;
+        $this->context->cookie->__unset($this->context->cookie->supercheckout_perm_address_delivery);
+        $this->context->cookie->supercheckout_perm_address_invoice = 0;
+        $this->context->cookie->__unset($this->context->cookie->supercheckout_perm_address_invoice);
+        $current_language_id = $this->context->language->id;
+        $id_lang = $this->context->language->id;
+            $this->context->controller->addCSS($this->_path . 'views/css/preferred_delivery.css');
+        if (isset($this->context->cookie->supercheckout_accepted_consent)) {
+            $accepted_consent = Tools::jsonDecode($this->context->cookie->supercheckout_accepted_consent);
+        if (isset($this->context->cookie->supercheckout_default_policy)) {
+            $default_policy_text = $this->context->cookie->supercheckout_default_policy;
+        $current_language_id = $this->context->language->id;
+        $current_language_id = $this->context->language->id;
+        $this->context->smarty->assign('supercheckout_gdpr_setting', $gdpr_setting);
+        $current_language_id = $this->context->language->id;
+                $date_add = Tools::displayDate($value['date_add'], $this->context->language->id, true);
