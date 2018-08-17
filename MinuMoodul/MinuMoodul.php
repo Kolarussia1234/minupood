@@ -73,13 +73,14 @@ class MinuMoodul extends Module
 }
 
         return parent::install() &&
+        	$this->registerHook('displayProductAdditionalInfo')&&
         	$this->registerHook('displayProductListReviews')&&
         	$this->registerHook('leftColumn')&&
         	$this->registerHook('rightColumn')&&
             $this->registerHook('header') &&
             $this->registerHook('backOfficeHeader') &&
-            $this->registerHook('actionObjectImageAddAfter') &&
-            $this->registerHook('actionOrderDetail');
+            $this->registerHook('displayRightColumnProduct')&&
+            $this->registerHook('displayOrderDetail');
     }
 
     public function uninstall()
@@ -386,22 +387,75 @@ public function hookDisplayHeader()
 }
 
 
-    public function hookActionObjectImageAddAfter()
-    {
-    	$this->context->controller->addJS($this->_path.'/views/js/alert.js');
-        /* Place your code here. */
-    }
+    /*public function hookActionObjectImageAddAfter(array $params)
+    *{
+    *	$this->context->controller->addJS($this->_path.'/views/js/alert.js');
+    *    /* Place your code here. */
+    //}
 
-    public function hookActionOrderDetail()
-    {
-        /* Place your code here. */
-        $this->context->controller->addJS($this->_path.'/views/js/alert.js');
-        $this->context->controller->addCSS($this->_path.'views/css/mymodule.css', 'all');
-    }
+   // public function hookActionOrderDetail(array $params)
+    //{
+    //    /* Place your code here. */
+    //    return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
+        //$this->context->controller->addJS($this->_path.'/views/js/alert.js');
+        //$this->context->controller->addCSS($this->_path.'views/css/mymodule.css', 'all');
+    //}
 
 
-    public function displayProductListReviews(){
+    /*public function hookDisplayProductListReviews($params){
     	//$this->context->controller->addCSS($this->_path.'views/css/mymodule.css', 'all');
+        $this->context->smarty->assign(
+          array(
+              'my_module_name' => Configuration::get('MYMODULE_NAME'),
+              'my_module_link' => $this->context->link->getModuleLink($this->name, 'display'),
+              'my_module_message' => $this->l('This is a simple text message') // Do not forget to enclose your strings in the l() translation method
+          )
+      );
+
     	$this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
+    } */
+
+    public function hookDisplayProductAdditionalInfo($params){
+            $this->context->smarty->assign(
+                  array(
+                      'my_module_name' => Configuration::get('MYMODULE_NAME'),
+                      'my_module_link' => $this->context->link->getModuleLink($this->name, 'display'),
+                      'my_module_message' => $this->l('This is a simple text message') // Do not forget to enclose your strings in the l() translation method
+                  )
+              );
+
+        //$this->context->controller->addCSS($this->_path.'views/css/mymodule.css', 'all');
+       return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
+        //$this->context->controller->display(__FILE__, 'views/templates/hook/mymodule.tpl');
     }
+
+   /* public function hookDisplayOrderDetail($params){
+            $this->context->smarty->assign(
+                array(
+                    'my_module_name' => Configuration::get('MYMODULE_NAME'),
+                    'my_module_link' => $this->context->link->getModuleLink($this->name, 'display'),
+                    'my_module_message' => $this->l('This is a simple text message') // Do not forget to enclose your strings in the l() translation method
+                )
+            );
+
+        return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
+
+
+       // array(
+    //    'order' => $this->display(__FILE__, 'views/templates/hook/mymodule.tpl')
+
+      //  );
+    } */
+
+   /* public function hookDisplayRightColumnProduct($params){
+        $this->context->smarty->assign(
+      array(
+          'my_module_name' => Configuration::get('MYMODULE_NAME'),
+          'my_module_link' => $this->context->link->getModuleLink($this->name, 'display'),
+          'my_module_message' => $this->l('This is a simple text message') // Do not forget to enclose your strings in the l() translation method
+      )
+  );
+
+        return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
+    } */
 }

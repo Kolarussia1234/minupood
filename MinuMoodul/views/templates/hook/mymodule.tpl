@@ -12,7 +12,6 @@
     </p>
     <ul>
       <li><a href="{$my_module_link}" title="Click this link">Click me!</a></li>
-	  <li>{$my_module_link}</li>
     </ul>
 	<p>{$my_module_message}</p>
   </div>
