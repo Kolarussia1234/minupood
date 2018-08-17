@@ -354,7 +354,7 @@ class MinuMoodul extends Module
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
     }
 
-    public function hookDisplayLeftColumn($params)
+    /*public function hookDisplayLeftColumn($params)
 {
   $this->context->smarty->assign(
       array(
@@ -364,9 +364,9 @@ class MinuMoodul extends Module
       )
   );
   return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
-} 
+} */
  
-public function hookDisplayRightColumn($params)
+/*public function hookDisplayRightColumn($params)
 {
 
 	//$this->context->smarty->assign(
@@ -378,7 +378,7 @@ public function hookDisplayRightColumn($params)
   //return $this->display(__FILE__, 'views/templates/hook/mymodule.tpl');
 
   return $this->hookDisplayLeftColumn($params);
-}
+} */
  
 public function hookDisplayHeader()
 {
